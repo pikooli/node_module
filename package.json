@@ -1,0 +1,25 @@
+{
+  "name": "@pikooli/node_module_ts",
+  "version": "1.0.0",
+  "description": "A boiletplate for a node_module in ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pikooli/node_module.git"
+  },
+  "author": "pikooli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pikooli/node_module/issues"
+  },
+  "homepage": "https://github.com/pikooli/node_module#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
