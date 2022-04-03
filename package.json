@@ -1,12 +1,16 @@
 {
   "name": "@pikooli/node_module_ts",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "A boiletplate for a node_module in ts",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "prepublish": "npm run build",
-    "build": "tsc",
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +24,15 @@
   },
   "homepage": "https://github.com/pikooli/node_module#readme",
   "devDependencies": {
+    "rollup": "^2.70.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.31.2",
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^21.0.3",
+    "@rollup/plugin-node-resolve": "^13.1.3"
   }
 }

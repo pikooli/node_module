@@ -4,5 +4,5 @@ export type VariableType = {
 
 export default function test(variableTest: VariableType) {
   // variableTest.any this work
-  console.log("Test in ts");
+  console.log(variableTest, "Test in ts");
 }
