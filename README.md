@@ -1,6 +1,6 @@
 # node_module
 
-A boiletplate for node_module with TS.
+A boiletplate for react node_module with TS.
 
 Do **_npm run build_** to generate the js file and declaration.
 
